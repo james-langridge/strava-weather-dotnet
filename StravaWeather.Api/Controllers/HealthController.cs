@@ -91,7 +91,7 @@ namespace StravaWeather.Api.Controllers
             
             // Determine overall status
             var services = new[] { healthStatus.services.database, healthStatus.services.stravaApi, healthStatus.services.weatherApi };
-            var unhealthyCount = services.Count(s => s.status == "unhealthy");
+            var unhealthyCount = services.Count(s => ((dynamic)s).status == "unhealthy");
             var status = unhealthyCount > 0 ? "unhealthy" : "healthy";
             
             var statusCode = status == "healthy" ? 200 : 503;

@@ -1,5 +1,6 @@
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using StravaWeather.Api.Configuration;
 using StravaWeather.Api.Services.Implementations;
 using StravaWeather.Api.Services.Interfaces;
 using StravaWeather.Api.Utils;

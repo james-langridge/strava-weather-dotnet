@@ -5,6 +5,7 @@ using Serilog;
 using StravaWeather.Api.Data;
 using StravaWeather.Api.Extensions;
 using StravaWeather.Api.Middleware;
+using StravaWeather.Api.Services.Interfaces;
 using System.Text;
 
 // Configure Serilog
